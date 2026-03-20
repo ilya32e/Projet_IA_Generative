@@ -1,0 +1,94 @@
+[
+  {
+    "profile_id": "P01",
+    "candidate_name": "Lina Martin",
+    "target_role": "BI Analyst",
+    "education_level": "M1 Data",
+    "experience_months": 8,
+    "tools": ["Python", "Pandas", "Plotly", "Excel"],
+    "focus_blocks": [
+      "Preparation des donnees",
+      "Visualisation et tableau de bord",
+      "Analyse exploratoire"
+    ],
+    "levels": {
+      "python": 4,
+      "visualisation": 5,
+      "eda": 4,
+      "semantic_nlp": 2,
+      "genai": 2
+    },
+    "project_text": "J ai nettoye des fichiers CSV de ventes avec pandas puis j ai harmonise les colonnes et les dates avant de faire les analyses.",
+    "dashboard_text": "J ai cree un tableau de bord Plotly pour suivre le chiffre d affaires par region avec des filtres simples et une legende claire.",
+    "genai_text": "J ai surtout utilise ChatGPT pour reformuler un compte rendu mais sans vraie logique RAG."
+  },
+  {
+    "profile_id": "P02",
+    "candidate_name": "Sofiane Diallo",
+    "target_role": "Analyste NLP",
+    "education_level": "M2 IA",
+    "experience_months": 14,
+    "tools": ["Python", "SentenceTransformers", "scikit-learn", "Streamlit"],
+    "focus_blocks": [
+      "Analyse exploratoire",
+      "NLP semantique",
+      "IA generative et RAG"
+    ],
+    "levels": {
+      "python": 5,
+      "visualisation": 3,
+      "eda": 4,
+      "semantic_nlp": 5,
+      "genai": 4
+    },
+    "project_text": "J ai entraine un moteur de matching semantique avec SentenceTransformers pour comparer des descriptions de competences et des profils de postes.",
+    "dashboard_text": "J ai presente les scores avec un bar chart simple et une table filtrable.",
+    "genai_text": "J ai construit un mini pipeline RAG pour generer un plan de progression et une bio professionnelle a partir des blocs detectes."
+  },
+  {
+    "profile_id": "P03",
+    "candidate_name": "Camille Robert",
+    "target_role": "Consultant HR Tech",
+    "education_level": "M1 RH Data",
+    "experience_months": 10,
+    "tools": ["Python", "Pandas", "Power BI", "OpenAI"],
+    "focus_blocks": [
+      "Preparation des donnees",
+      "Visualisation et tableau de bord",
+      "IA generative et RAG"
+    ],
+    "levels": {
+      "python": 3,
+      "visualisation": 4,
+      "eda": 3,
+      "semantic_nlp": 3,
+      "genai": 5
+    },
+    "project_text": "J ai travaille sur une cartographie de competences avec des jeux de donnees RH en nettoyant les doublons et en standardisant les niveaux de competences.",
+    "dashboard_text": "J ai utilise Power BI pour montrer les competences couvertes et les competences manquantes selon le metier cible.",
+    "genai_text": "J ai teste plusieurs prompts pour generer des recommandations de parcours et j ai compare la couverture des mots cles attendus."
+  },
+  {
+    "profile_id": "P04",
+    "candidate_name": "Nora Benali",
+    "target_role": "AI Product Analyst",
+    "education_level": "M2 Produit Data",
+    "experience_months": 18,
+    "tools": ["Python", "SQL", "Plotly", "Transformers", "Notion"],
+    "focus_blocks": [
+      "Analyse exploratoire",
+      "NLP semantique",
+      "IA generative et RAG"
+    ],
+    "levels": {
+      "python": 4,
+      "visualisation": 4,
+      "eda": 5,
+      "semantic_nlp": 4,
+      "genai": 5
+    },
+    "project_text": "Je pilote des POC data ou il faut analyser des retours utilisateurs et en sortir des insights clairs pour prioriser les fonctionnalites produit.",
+    "dashboard_text": "Je fais des dashboards de suivi adoption et qualite de reponse avec des filtres par cas d usage.",
+    "genai_text": "Je structure les prompts d un assistant RAG et je mesure la couverture des competences manquantes dans le plan genere."
+  }
+]

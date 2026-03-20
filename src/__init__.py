@@ -1,0 +1,1 @@
+"""AISCA student MVP package."""

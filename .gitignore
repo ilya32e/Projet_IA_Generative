@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+cache/
+data/processed/submissions/
+data/processed/submission_index.csv
+.pytest_cache/
+.mypy_cache/

@@ -1,0 +1,23 @@
+competency_id,block_id,block_name,competency_text,weight,source,priority
+C001,B01, Preparation des donnees ,Nettoyer un jeu de donnees tabulaire avec pandas et traiter les valeurs manquantes,1.20,ROME,high
+C002,B01,preparation des donnees,Standardiser des dates corriger les doublons et harmoniser les colonnes,1.10,ROME,high
+C003,B01,PREPARATION DES DONNEES,Documenter les transformations appliquees avant l analyse,1.00,eCF,medium
+C004,B01,Preparation des donnees,Preparer un dataset exploitable pour une analyse de competences et des graphiques,1.15,Projet,high
+C004_DUP,B01,Preparation des donnees, Preparer un dataset exploitable pour une analyse de competences et des graphiques ,1.15,Projet,high
+C005,B02,Visualisation et dashboarding,Construire un tableau de bord clair pour expliquer les resultats a un manager,1.10,ROME,high
+C006,B02,visualisation et tableau de bord,Choisir un graphique adapte a la question metier,1.00,ROME,medium
+C007,B02,VISUALISATION ET TABLEAU DE BORD,Ajouter des filtres interactifs pour explorer les blocs de competences,1.05,Projet,high
+C008,B02,Visualisation et tableau de bord,Presenter une visualisation inclusive avec couleurs lisibles et legende explicite,1.15,Projet,high
+C009,B03,Analyse exploratoire,Calculer des statistiques descriptives sur les reponses utilisateur,1.10,ROME,high
+C010,B03,analyse exploratoire,Identifier les blocs forts et faibles a partir des scores semantiques,1.20,Projet,high
+C011,B03,ANALYSE EXPLORATOIRE,Formuler des insights actionnables pour l orientation metier,1.10,eCF,high
+C012,B03,Analyse exploratoire,Expliquer les etapes d analyse et les limites observees,1.00,Projet,medium
+C013,B04,NLP semantique,Encoder des phrases avec un modele SBERT multilingue,1.20,Projet,high
+C014,B04,nlp semantique,Calculer une similarite cosinus entre profil utilisateur et competences,1.20,Projet,high
+C015,B04,NLP SEMANTIQUE,Agreger des scores semantiques par bloc de competences,1.10,Projet,high
+C016,B04,NLP semantique,Recommander les trois metiers les plus pertinents a partir des scores,1.05,ROME,high
+C017,B05,IA generative et RAG,Enrichir une reponse utilisateur trop courte avant l analyse si necessaire,0.95,Projet,medium
+C018,B05,ia generative et rag,Construire un contexte RAG a partir des competences detectees et manquantes,1.15,Projet,high
+C019,B05,IA GENERATIVE ET RAG,Generer un plan de progression personnalise en un seul appel,1.20,Projet,high
+C020,B05,IA generative et RAG,Produire une bio professionnelle courte et ciblee,1.00,Projet,high
+C021,B05,IA generative et RAG,Evaluer la qualite d un texte genere avec des metriques simples de couverture et lisibilite,1.10,Projet,high

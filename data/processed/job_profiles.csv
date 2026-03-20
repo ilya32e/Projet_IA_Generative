@@ -1,0 +1,7 @@
+job_id,job_title,description,required_competencies,focus_blocks,priority_weight,required_count,focus_block_count
+J01,Data Analyst Junior,Analyse et preparation de donnees pour aider la prise de decision,C001;C002;C005;C009;C010;C012;C016,B01;B02;B03;B04,1.0,7,4
+J02,BI Analyst,Construction de tableaux de bord et communication visuelle des indicateurs,C003;C005;C006;C007;C008;C009;C010,B01;B02;B03,1.05,7,3
+J03,Analyste NLP,Analyse semantique et correspondance de competences sur des textes libres,C001;C009;C013;C014;C015;C016;C018,B01;B03;B04;B05,1.15,7,4
+J04,Consultant HR Tech,Cartographie des competences et recommandation de parcours pour des profils RH,C001;C003;C007;C010;C011;C015;C018;C019,B01;B02;B03;B04;B05,1.1,8,5
+J05,AI Product Analyst,Pilotage d un produit data integre avec une couche d IA generative,C005;C010;C011;C015;C017;C018;C019;C020;C021,B02;B03;B04;B05,1.2,9,4
+J06,Consultant GenAI Junior,Cadrage et evaluation d un assistant RAG dans un contexte metier,C008;C011;C017;C018;C019;C020;C021,B02;B03;B05,1.1,7,3

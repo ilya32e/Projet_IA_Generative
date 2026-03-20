@@ -1,0 +1,22 @@
+competency_id,block_id,block_name,competency_text,weight,source,priority,competency_slug,word_count
+C001,B01,Preparation des donnees,Nettoyer un jeu de donnees tabulaire avec pandas et traiter les valeurs manquantes,1.2,ROME,high,nettoyer_un_jeu_de_donnees_tabulaire_avec_pandas_et_traiter_les_valeurs_manquantes,13
+C002,B01,Preparation des donnees,Standardiser des dates corriger les doublons et harmoniser les colonnes,1.1,ROME,high,standardiser_des_dates_corriger_les_doublons_et_harmoniser_les_colonnes,10
+C003,B01,Preparation des donnees,Documenter les transformations appliquees avant l analyse,1.0,eCF,medium,documenter_les_transformations_appliquees_avant_l_analyse,7
+C004,B01,Preparation des donnees,Preparer un dataset exploitable pour une analyse de competences et des graphiques,1.15,Projet,high,preparer_un_dataset_exploitable_pour_une_analyse_de_competences_et_des_graphiques,12
+C005,B02,Visualisation et tableau de bord,Construire un tableau de bord clair pour expliquer les resultats a un manager,1.1,ROME,high,construire_un_tableau_de_bord_clair_pour_expliquer_les_resultats_a_un_manager,13
+C006,B02,Visualisation et tableau de bord,Choisir un graphique adapte a la question metier,1.0,ROME,medium,choisir_un_graphique_adapte_a_la_question_metier,8
+C007,B02,Visualisation et tableau de bord,Ajouter des filtres interactifs pour explorer les blocs de competences,1.05,Projet,high,ajouter_des_filtres_interactifs_pour_explorer_les_blocs_de_competences,10
+C008,B02,Visualisation et tableau de bord,Presenter une visualisation inclusive avec couleurs lisibles et legende explicite,1.15,Projet,high,presenter_une_visualisation_inclusive_avec_couleurs_lisibles_et_legende_explicite,10
+C009,B03,Analyse exploratoire,Calculer des statistiques descriptives sur les reponses utilisateur,1.1,ROME,high,calculer_des_statistiques_descriptives_sur_les_reponses_utilisateur,8
+C010,B03,Analyse exploratoire,Identifier les blocs forts et faibles a partir des scores semantiques,1.2,Projet,high,identifier_les_blocs_forts_et_faibles_a_partir_des_scores_semantiques,11
+C011,B03,Analyse exploratoire,Formuler des insights actionnables pour l orientation metier,1.1,eCF,high,formuler_des_insights_actionnables_pour_l_orientation_metier,8
+C012,B03,Analyse exploratoire,Expliquer les etapes d analyse et les limites observees,1.0,Projet,medium,expliquer_les_etapes_d_analyse_et_les_limites_observees,9
+C013,B04,NLP semantique,Encoder des phrases avec un modele SBERT multilingue,1.2,Projet,high,encoder_des_phrases_avec_un_modele_sbert_multilingue,8
+C014,B04,NLP semantique,Calculer une similarite cosinus entre profil utilisateur et competences,1.2,Projet,high,calculer_une_similarite_cosinus_entre_profil_utilisateur_et_competences,9
+C015,B04,NLP semantique,Agreger des scores semantiques par bloc de competences,1.1,Projet,high,agreger_des_scores_semantiques_par_bloc_de_competences,8
+C016,B04,NLP semantique,Recommander les trois metiers les plus pertinents a partir des scores,1.05,ROME,high,recommander_les_trois_metiers_les_plus_pertinents_a_partir_des_scores,11
+C017,B05,IA generative et RAG,Enrichir une reponse utilisateur trop courte avant l analyse si necessaire,0.95,Projet,medium,enrichir_une_reponse_utilisateur_trop_courte_avant_l_analyse_si_necessaire,11
+C018,B05,IA generative et RAG,Construire un contexte RAG a partir des competences detectees et manquantes,1.15,Projet,high,construire_un_contexte_rag_a_partir_des_competences_detectees_et_manquantes,11
+C019,B05,IA generative et RAG,Generer un plan de progression personnalise en un seul appel,1.2,Projet,high,generer_un_plan_de_progression_personnalise_en_un_seul_appel,10
+C020,B05,IA generative et RAG,Produire une bio professionnelle courte et ciblee,1.0,Projet,high,produire_une_bio_professionnelle_courte_et_ciblee,7
+C021,B05,IA generative et RAG,Evaluer la qualite d un texte genere avec des metriques simples de couverture et lisibilite,1.1,Projet,high,evaluer_la_qualite_d_un_texte_genere_avec_des_metriques_simples_de_couverture_et_lisibilite,15
