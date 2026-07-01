@@ -5,3 +5,9 @@ J03,Analyste NLP,Analyse semantique et correspondance de competences sur des tex
 J04,Consultant HR Tech,Cartographie des competences et recommandation de parcours pour des profils RH,C001;C003;C007;C010;C011;C015;C018;C019,B01;B02;B03;B04;B05,1.1,8,5
 J05,AI Product Analyst,Pilotage d un produit data integre avec une couche d IA generative,C005;C010;C011;C015;C017;C018;C019;C020;C021,B02;B03;B04;B05,1.2,9,4
 J06,Consultant GenAI Junior,Cadrage et evaluation d un assistant RAG dans un contexte metier,C008;C011;C017;C018;C019;C020;C021,B02;B03;B05,1.1,7,3
+J07,Data Engineer Junior,Construction et fiabilisation de pipelines de donnees pour alimenter l analyse,C001;C002;C003;C004;C009;C012,B01;B03,1.0,6,2
+J08,Data Visualization Specialist,Conception de tableaux de bord et de visualisations claires pour le metier,C004;C005;C006;C007;C008;C011,B02;B03,1.0,6,2
+J09,Data Quality Analyst,Controle qualite nettoyage et documentation des jeux de donnees,C001;C002;C003;C009;C010;C012,B01;B03,1.0,6,2
+J10,NLP Research Assistant,Recherche appliquee en analyse semantique et embeddings de texte,C009;C012;C013;C014;C015;C016,B03;B04,1.0,6,2
+J11,Prompt Engineer,Conception et evaluation de prompts pour des assistants generatifs,C011;C017;C018;C019;C020;C021,B03;B05,1.0,6,2
+J12,Data Product Owner,Pilotage d un produit data et IA de la donnee a la recommandation,C004;C010;C011;C016;C018;C019,B03;B04;B05,1.0,6,3

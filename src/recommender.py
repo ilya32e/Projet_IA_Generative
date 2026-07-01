@@ -16,11 +16,11 @@ def _weighted_average(values: pd.Series, weights: pd.Series) -> float:
 
 
 def _score_label(score: float) -> str:
-    if score >= 0.75:
+    if score >= 0.60:
         return "Fort"
-    if score >= 0.55:
+    if score >= 0.48:
         return "Correct"
-    if score >= 0.35:
+    if score >= 0.38:
         return "Moyen"
     return "A renforcer"
 
@@ -41,12 +41,11 @@ def score_competencies(
         return scored, evidence_texts
 
     best_indices = similarity_matrix.argmax(axis=0)
-    raw_scores = similarity_matrix.max(axis=0)
-    best_scores = np.sqrt(np.clip(raw_scores, 0.0, 1.0))
+    raw_scores = np.clip(similarity_matrix.max(axis=0), 0.0, 1.0)
 
     scored = reference_df.copy()
     scored["raw_similarity"] = np.round(raw_scores, 4)
-    scored["similarity_score"] = np.round(best_scores, 4)
+    scored["similarity_score"] = np.round(raw_scores, 4)
     scored["best_evidence"] = [evidence_texts[index] for index in best_indices]
     scored["coverage_label"] = scored["similarity_score"].map(_score_label)
     return scored.sort_values("similarity_score", ascending=False).reset_index(drop=True), evidence_texts
@@ -95,8 +94,10 @@ def compute_job_scores(
 
         focus_blocks = [clean_text(item).upper() for item in str(job["focus_blocks"]).split(";") if clean_text(item)]
         block_bonus = float(block_scores.reindex(focus_blocks).fillna(0).mean()) if focus_blocks else 0.0
-        final_score = (0.55 * average_score) + (0.25 * coverage_rate) + (0.20 * block_bonus)
-        final_score *= float(job["priority_weight"])
+        # Score = qualite de correspondance (avg) + couverture reelle des competences requises.
+        # On n'applique plus de priority_weight global : il ecrasait le matching et favorisait
+        # toujours les memes metiers quel que soit le profil saisi.
+        final_score = (0.60 * average_score) + (0.40 * coverage_rate)
 
         rows.append(
             {

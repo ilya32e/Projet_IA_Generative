@@ -24,6 +24,7 @@ from .data_pipeline import clean_text
 class GenerationSettings:
     max_new_tokens: int = 140
     temperature: float = 0.2
+    top_p: float = 0.95
 
 
 class LocalGenAI:
@@ -256,17 +257,32 @@ class LocalGenAI:
         if client is None or self._gemini_types is None:
             raise RuntimeError("Gemini indisponible")
 
+        # gemini-2.5-flash est un modele "thinking" : les tokens de raisonnement sont
+        # decomptes du budget de sortie. On desactive le thinking (thinking_budget=0) et
+        # on garde un plancher de tokens suffisant pour eviter une reponse tronquee.
         config_kwargs = {
             "system_instruction": system_instruction,
             "temperature": settings.temperature,
-            "max_output_tokens": settings.max_new_tokens,
+            "top_p": settings.top_p,
+            "max_output_tokens": max(int(settings.max_new_tokens) * 4, 512),
         }
-
         try:
-            config = self._gemini_types.GenerateContentConfig(**config_kwargs)
-        except TypeError:
-            config_kwargs.pop("max_output_tokens", None)
-            config = self._gemini_types.GenerateContentConfig(**config_kwargs)
+            config_kwargs["thinking_config"] = self._gemini_types.ThinkingConfig(thinking_budget=0)
+        except Exception:
+            pass
+
+        config = None
+        for _ in range(3):
+            try:
+                config = self._gemini_types.GenerateContentConfig(**config_kwargs)
+                break
+            except TypeError:
+                if "thinking_config" in config_kwargs:
+                    config_kwargs.pop("thinking_config")
+                elif "max_output_tokens" in config_kwargs:
+                    config_kwargs.pop("max_output_tokens")
+                else:
+                    raise
 
         response = client.models.generate_content(
             model=self.model_name,
@@ -287,6 +303,7 @@ class LocalGenAI:
             prompt,
             max_new_tokens=settings.max_new_tokens,
             temperature=settings.temperature,
+            top_p=settings.top_p,
             do_sample=settings.temperature > 0.05,
         )
         text = clean_text(outputs[0]["generated_text"].strip())

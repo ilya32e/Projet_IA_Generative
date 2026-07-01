@@ -141,9 +141,10 @@ def build_evidence_texts(submission: dict[str, Any]) -> list[str]:
     if project_focus:
         evidence.append("Type de projet dominant : " + project_focus)
     if tokenization_used:
-        if tokenization_used.lower() == "oui":
+        tok = tokenization_used.lower()
+        if tok.startswith("oui"):
             evidence.append("J ai deja utilise des techniques de tokenization dans un projet de traitement de texte.")
-        elif tokenization_used.lower() == "non":
+        elif tok in ("non", "jamais"):
             evidence.append("Je n ai pas encore utilise de techniques de tokenization dans un projet.")
         else:
             evidence.append("J ai seulement quelques notions de tokenization et de pretraitement de texte.")
